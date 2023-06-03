@@ -10,7 +10,8 @@ This allowed me to store more data for some reason and generate the image when t
 There are still some errors while fetching the image but this could possibly be from certain cards of magic's history where the cards were
 deemed or targeted towards specific groups and the image can't be displayed without the permission of the user. 
 Example: https://scryfall.com/card/leg/62/invoke-prejudice
+Another reason could be because of some cards being double-sided and the code can't choose which side to generate.
 
 What is really confusing for me was that the console displays an error 503 but still gets data for the console.log and the image.
 
-The file with the correct code in it is FINAL.html
+The file with the correct code in it is FINAL.html.

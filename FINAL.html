@@ -13,6 +13,7 @@
       fetch("https://api.scryfall.com/cards/random")
         .then(response => response.json())
         .then(data => {
+          console.log(data);
           var imageUrl = data.image_uris.normal;
           var imageElement = document.createElement("img");
           imageElement.src = imageUrl;
