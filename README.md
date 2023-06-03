@@ -12,3 +12,5 @@ deemed or targeted towards specific groups and the image can't be displayed with
 Example: https://scryfall.com/card/leg/62/invoke-prejudice
 
 What is really confusing for me was that the console displays an error 503 but still gets data for the console.log and the image.
+
+The file with the correct code in it is FINAL.html
