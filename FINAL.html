@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+</head>
+<body>
+    <h1>This is a card generator! Click to display a random card from MTG's History!</h1>
+  <button onclick="fetchImage()">Generate!</button>
+  <div id="imageContainer"></div>
+
+  <script>
+    function fetchImage() {
+      fetch("https://api.scryfall.com/cards/random")
+        .then(response => response.json())
+        .then(data => {
+          var imageUrl = data.image_uris.normal;
+          var imageElement = document.createElement("img");
+          imageElement.src = imageUrl;
+          document.getElementById("imageContainer").innerHTML = "";
+          document.getElementById("imageContainer").appendChild(imageElement);
+        })
+        .catch(error => {
+          alert("Error occurred while fetching the image.");
+        });
+    }
+  </script>
+</body>
+</html>
